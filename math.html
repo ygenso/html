@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>polygon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script type="text/javascript" src="components/polygon_Pi.js"></script>
+    <script type="text/javascript" src="components/polygon.js"></script>
+    <link rel="stylesheet" href="components/css/style.css">
+    <link rel="stylesheet" href="components/css/botan.css">
+    <link rel="stylesheet" href="components/css/takakukei.css">
+    <style>
+        canvas{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        input{
+            padding: 0.1em;
+        } 
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div id="container">
+		  <div id="logo">
+               <a href="index.html">Go-To</a>
+           </div>
+        </div>
+    </header>
+    <h1>円周率を求める<br>プログラム</h1>
+    <p>
+        <div class="saizu">
+            <label>n ＝<input type="number" id="inputs" min="3" style="height:1.3rem;  width: 15%;"></label>
+            <input type="button" value="作成" id="button" style="height:1.5rem;" onclick="myfunc()">
+        </div><br>
+        <div class="pa">
+            <label><input type="checkbox" id="check"> 描画毎に画面をクリア</label><br>
+            <button onclick="riset();" style="height:1.5rem;">すべて消す</button>
+        </div>
+    </p>
+    <table>
+        <caption><b>p < π < q</b></caption>        
+        <tr>
+            <td>
+                <p class="taito">以上 (p)</p>
+            </td>
+            <td>
+                <p id="ijou" class="hyou">3.000</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="taito">円周率 (π)</p>
+            </td>
+            <td>
+                <p class="hyou">3.1415926535897932</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="taito">以下 (q)</p>
+            </td>
+            <td>
+                <p id="ika" class="hyou">3.464</p>
+            </td>
+        </tr>
+    </table>
+    <p id = "msg"></p>
+    <canvas id="rectangle" width="350" height="350"></canvas>
+    
+</body>
+</html>
