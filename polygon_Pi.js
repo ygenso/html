@@ -1,3 +1,4 @@
+
 var myfunc = function(){
     let side = document.getElementById("inputs").value;
     let r = 1;
