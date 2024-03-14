@@ -1,4 +1,5 @@
-
+*{margin: 0; padding: 0;}
+    img {border: 0;}
         body {
             background-color: #ddecf6;
             color : rgb(0, 0, 0);
